@@ -75,7 +75,7 @@ function ProjectCard() {
             <Card className="animate shadow-sm mt-3 h-100" 
               style={{ backgroundColor: "rgba(78, 78, 96, 0.75)", color: "#fff", borderRadius: "2%" }}>
               {/* Card Title and Description */}
-              <Card.Body>
+              <Card.Body className="project-card-body">
                 {/* Title and Description Section */}
                 <div className="card-title-description">
                     <div className="responsive-text text-center mb-3" style={{ fontWeight: "700" }}>

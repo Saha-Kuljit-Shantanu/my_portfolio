@@ -105,12 +105,12 @@ function SkillCard() {
   return (
     <Container>
       <span className="responsive-text pb-3 mb-3">My skillset in different fields</span>
-      <Row xs={1} sm={1} md={1} lg={2} className="g-4 py-4">
+      <Row xs={1} sm={1} md={2} lg={3} className="g-4 py-4">
         {cardData.map((card, index) => (
           <Col key={index} className="skill-card d-flex flex-column" 
           style={{ "--animation-delay": `${index * 0.2}s` }}>
             <Card className="animate text-white shadow-sm mt-3 h-100" style={{backgroundColor: "#223", padding: '0 0 0 0'}}>
-              {/* Card Header */}
+              
               <Card.Header
                 className={`skill-card-header bg-${card.bgColor} d-flex align-items-center`}
                 style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px"}}
@@ -123,7 +123,7 @@ function SkillCard() {
                 <span>{card.title}</span>
               </Card.Header>
 
-              {/* Card Body */}
+              
               <Card.Body style={{borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", backgroundColor: "#556"}}>
                 {card.skills.map((skill, idx) => (
                   <div
