@@ -45,7 +45,7 @@ function NavBar() {
           <Navbar.Brand href="#home">
             <img src={DP} alt="Profile image" className='profile-image' onClick={() => onUpdateActiveLink('home')}/>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" >
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className='navbar-toggler-icon'></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
